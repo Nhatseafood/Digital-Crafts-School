@@ -27,5 +27,10 @@ if day_of_week == 0 or day_of_week ==6:
 if day_of_week >=1 and day_of_week<=5:
     print("Go to work")
 
+#problem 6
+tempc = int(input("Tempature in C")) 
+tempf = tempc * 1.8 + 32
+print(tempf)
+
 
        
