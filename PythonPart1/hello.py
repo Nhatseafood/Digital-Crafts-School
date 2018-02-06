@@ -77,15 +77,22 @@ else:
     print("tip amount "+ "$" +"{:.2f}".format(tip))
     print("total amount "+ "$" +"{:.2f}".format(total))
     print("amount_per_person "+ "$" +"{:.2f}".format(amount_per_person))
-'''
+
 #Problem 9
 count = 0
 while count < 10:
     count = count +1
     print(count)
+'''
+#problem 10
+coin = 0
 
 
-
-
-
-       
+while True:
+    print("You have",coin, " coins.")
+    total = input("Do you want another? [yes or no] ")
+    if total == 'no':
+        print("bye")
+        break
+    else:
+        coin += 1
