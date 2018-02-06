@@ -31,7 +31,7 @@ if day_of_week >=1 and day_of_week<=5:
 tempc = int(input("Tempature in C")) 
 tempf = tempc * 1.8 + 32
 print(tempf)
-'''
+
 #problem 7
 total = int(input("What is the total bill"))
 rating = input("level of service? [put good, fair, or bad]")
@@ -48,5 +48,37 @@ else:
     tip = total *.1
     total = total + tip
     print(total)
+
+print("{:.2f}".format(22))
+'''
+#problem 8
+total = int(input("What is the total bill "))
+rating = input("level of service? [put good, fair, or bad] ")
+level_of_service = ("good", "fair", "bad")
+people = int(input("Number of people? [put number of people] "))
+if rating == ("good"): 
+   tip = total *.2
+   total = total + tip
+   amount_per_person = total / people
+   print("tip amount "+ "$" + "{:.2f}".format(tip))
+   print("total amount "+ "$" +"{:.2f}".format(total))
+   print("amount_per_person "+ "$" +"{:.2f}".format(amount_per_person))
+elif rating == "fair":
+    tip = total *.15
+    total = total + tip
+    amount_per_person = total / people
+    print("tip amount "+ "$" + "{:.2f}".format(tip))
+    print("total amount "+ "$" + "{:.2f}".format(total))
+    print("amount_per_person "+ "$" +"{:.2f}".format(amount_per_person))
+else:
+    tip = total *.1
+    total = total + tip
+    amount_per_person = total / people
+    print("tip amount "+ "$" +"{:.2f}".format(tip))
+    print("total amount "+ "$" +"{:.2f}".format(total))
+    print("amount_per_person "+ "$" +"{:.2f}".format(amount_per_person))
+
+
+
 
        
