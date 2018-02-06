@@ -50,7 +50,7 @@ else:
     print(total)
 
 print("{:.2f}".format(22))
-'''
+
 #problem 8
 total = int(input("What is the total bill "))
 rating = input("level of service? [put good, fair, or bad] ")
@@ -77,6 +77,13 @@ else:
     print("tip amount "+ "$" +"{:.2f}".format(tip))
     print("total amount "+ "$" +"{:.2f}".format(total))
     print("amount_per_person "+ "$" +"{:.2f}".format(amount_per_person))
+'''
+#Problem 9
+count = 0
+while count < 10:
+    count = count +1
+    print(count)
+
 
 
 
