@@ -24,7 +24,7 @@ a = [1, 2, 3, 4, 5]
 for i in a:
     if i > 0:
         print(i)   
-'''
+
 #6
 a = [1, 2, 3, 4, 5]
 b=[]
@@ -32,4 +32,12 @@ for i in a:
     if i > 0:
         b.extend([i])
 
-print(b)          
+print(b)     
+'''    
+#7
+a = [1, 2, 3, 4, 5]
+c = []
+for i in a:
+    c.extend([i*2])
+
+print(c)   
