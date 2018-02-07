@@ -41,7 +41,7 @@ for i in a:
     c.extend([i*2])
 
 print(c)   
-''' 
+ 
 #8
 a = [1, 2, 3]
 b = [4, 5, 6]
@@ -50,3 +50,17 @@ d =[]
 for i in a:
     d.extend([i*b[a.index(i)]])
 print(d)
+'''
+#9
+a = [[1, 3], [2, 4]]
+b = [[5, 2], [1, 0]]
+c = [[],[]]
+
+for i in a:
+    y = a.index(i)
+    for x in i:
+        k = a[y].index(x)
+        z = a[y][k] + b[y][k]
+        c[y].extend([z])
+print(c)
+    
