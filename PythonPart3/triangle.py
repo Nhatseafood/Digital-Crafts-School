@@ -1,9 +1,13 @@
 from turtle import *
 
-turtle.mode('logo')
-turtle.speed(10)
-turtle.shape('turtle')
+mode('logo')
+speed(1)
+shape('turtle')
 
-turtle.forward(100)
-turtle.right(120)
-turtle.left(90)
+forward(100)
+right(120)
+forward(100)
+right(120)
+forward(100)
+mainloop()
+
