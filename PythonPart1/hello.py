@@ -1,7 +1,7 @@
 '''
 #problem 1
 name = input('What is your name? ')
-print("Hello," +name +"!")
+print("Hello," + name + "!")
 #problem 2
 name = input('What is your name? ')
 print("Hello," +name +"!")
@@ -83,7 +83,7 @@ count = 0
 while count < 10:
     count = count +1
     print(count)
-'''
+
 #problem 10
 coin = 0
 
@@ -96,3 +96,12 @@ while True:
         break
     else:
         coin += 1
+
+print("Please fill in the blanks below:")
+name = input("what is name? ")
+subject = input("What is subject? ")
+print(name + "'s " + "favorite subject in school is " + subject + ".")
+'''
+day = int(input("Pick a day number (0-6)?"))
+week = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"]
+print(week[day])
