@@ -1,4 +1,8 @@
+import matplotlib.pyplot as plotlibrary
+import math
+from numpy import arange
 '''
+
 #1. hello
 def hello(x):
     print("Hello " + x)
@@ -70,7 +74,7 @@ for x in xs:
 plotlibrary.plot(xs, ys)
 plotlibrary.show() 
 
-'''
+
 # 6. Sine 2
 import matplotlib.pyplot as plotlibrary
 import math
@@ -88,4 +92,17 @@ for x in xs:
 plotlibrary.plot(xs,ys)
 plotlibrary.show()
 
+'''
+# 7. degree conversion
 
+def f(tempc):
+    return tempc * 1.8 + 32
+
+xs = list(range(-2, 2))
+ys = []
+
+for tempc in xs:
+    ys.append(f(tempc))
+    
+plotlibrary.plot(xs, ys)
+plotlibrary.show()
