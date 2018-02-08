@@ -2,10 +2,18 @@
 #problem 1
 name = input('What is your name? ')
 print("Hello," + name + "!")
+
 #problem 2
 name = input('What is your name? ')
 print("Hello," +name +"!")
 print("Your Name Has", len(name), "LETTER IN IT! AWESOME!")
+
+#problem 2.1
+print("Please fill in the blanks below:")
+name = input("what is name? ")
+subject = input("What is subject? ")
+print(name + 's' + "favorite subject in school is" + subject)
+
 #problem 3
 #input ("name", "subject")
 name = input("What is your name")
@@ -18,6 +26,11 @@ week = ["Sunday", "Monday", "Tuesday", "Wednesday," "Thuesday", "Friday", "Sunda
 day_of_week =int(input("Please give day of the week (0-6) 0 is Sunday."))
 print(week[day_of_week])
 
+#problem 4.1
+day = int(input("Pick a day number (0-6)?"))
+week = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"]
+print(week[day])
+
 #problem 5
 week = ["Sunday", "Monday", "Tuesday", "Wednesday," "Thuesday", "Friday", "Sunday"]
 day_of_week =int(input("Please give day of the week (0-6) 0 is Sunday."))
@@ -25,6 +38,14 @@ if day_of_week == 0 or day_of_week ==6:
     print("Sleep in")
 
 if day_of_week >=1 and day_of_week<=5:
+    print("Go to work")
+
+#problem 5.1
+day = int(input("Pick a day number (0-6)? "))
+week = ["Sun", "M", "T", "W", "Th", "F", "Sat"]
+if week[day] == "Sun" or week[day] == "Sat":
+    print("Sleep in")
+else:
     print("Go to work")
 
 #problem 6
@@ -102,6 +123,3 @@ name = input("what is name? ")
 subject = input("What is subject? ")
 print(name + "'s " + "favorite subject in school is " + subject + ".")
 '''
-day = int(input("Pick a day number (0-6)?"))
-week = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"]
-print(week[day])
