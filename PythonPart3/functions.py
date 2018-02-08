@@ -34,7 +34,7 @@ for x in xs:
 plotlibrary.plot(xs,ys)
 plotlibrary.show()
 
-'''
+
 # 4. odd or even
 import matplotlib.pyplot as plotlibrary
 
@@ -52,3 +52,20 @@ for x in xs:
 
 plotlibrary.bar(xs, ys)
 plotlibrary.show()
+
+'''
+# 5. Sine
+import matplotlib.pyplot as plotlibrary
+import math
+
+def f(x):
+    return math.sin(x)
+
+xs = list(range(-5, 5))
+ys = []
+
+for x in xs:
+    ys.append(f(x))
+
+plotlibrary.plot(xs, ys)
+plotlibrary.show() 
