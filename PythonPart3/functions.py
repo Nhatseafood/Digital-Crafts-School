@@ -71,7 +71,7 @@ plotlibrary.plot(xs, ys)
 plotlibrary.show() 
 
 '''
-# 5. Sine 2
+# 6. Sine 2
 import matplotlib.pyplot as plotlibrary
 import math
 from numpy import arange
