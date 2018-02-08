@@ -50,7 +50,7 @@ d =[]
 for i in a:
     d.extend([i*b[a.index(i)]])
 print(d)
-'''
+
 #9
 a = [[1, 3], [2, 4]]
 b = [[5, 2], [1, 0]]
@@ -63,4 +63,10 @@ for i in a:
         z = a[y][k] + b[y][k]
         c[y].extend([z])
 print(c)
-    
+'''    
+day = int(input("Pick a day number (0-6)? "))
+week = ["Sun", "M", "T", "W", "Th", "F", "Sat"]
+if week[day] == "Sun" or week[day] == "Sat":
+    print("Sleep in")
+else:
+    print("Go to work")
