@@ -49,7 +49,7 @@ else:
     print("Go to work")
 
 #problem 6
-tempc = int(input("Tempature in C")) 
+tempc = int(input("What is the Tempature in C?")) 
 tempf = tempc * 1.8 + 32
 print(tempf)
 
