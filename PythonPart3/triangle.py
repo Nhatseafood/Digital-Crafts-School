@@ -1,3 +1,5 @@
+'''
+
 from turtle import *
 
 mode('logo')
@@ -11,3 +13,15 @@ right(120)
 forward(100)
 mainloop()
 
+'''
+from turtle import *
+
+mode('logo')
+speed(1)
+shape('turtle')
+
+for i in range(3):
+    forward(100)
+    right(120)
+
+# while True: for infinite loop
