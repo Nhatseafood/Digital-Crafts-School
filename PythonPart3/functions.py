@@ -92,7 +92,7 @@ for x in xs:
 plotlibrary.plot(xs,ys)
 plotlibrary.show()
 
-'''
+
 # 7. degree conversion
 
 def f(tempc):
@@ -106,3 +106,27 @@ for tempc in xs:
     
 plotlibrary.plot(xs, ys)
 plotlibrary.show()
+
+# 8 play again
+def f():
+    answer = input("Do you want to play again (Y or N)? ")
+    if answer == 'Y':
+        return True
+    else:
+        return False
+f()
+
+'''
+
+# 9
+def f():
+    answer = input("Do you want to play again (Y or N)? ")
+    if answer == 'Y':
+        return True
+    elif answer == 'N':
+        return False
+    else:
+        print("invalid input. Please try again. ")
+        f()   
+f()
+    
