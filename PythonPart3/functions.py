@@ -19,7 +19,7 @@ for x in xs:
 plotlibrary.plot(xs, ys)
 plotlibrary.show()
 
-'''
+
 # 3. Square of x
 import matplotlib.pyplot as plotlibrary
 
@@ -32,4 +32,23 @@ for x in xs:
     ys.append(f(x))
 
 plotlibrary.plot(xs,ys)
+plotlibrary.show()
+
+'''
+# 4. odd or even
+import matplotlib.pyplot as plotlibrary
+
+def f(x):
+    if x % 2 == 0:
+        return -1
+    else:
+        return 1
+
+xs = list(range(-5, 5))
+ys = []
+
+for x in xs:
+    ys.append(f(x))
+
+plotlibrary.bar(xs, ys)
 plotlibrary.show()
