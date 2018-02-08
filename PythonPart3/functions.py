@@ -53,7 +53,7 @@ for x in xs:
 plotlibrary.bar(xs, ys)
 plotlibrary.show()
 
-'''
+
 # 5. Sine
 import matplotlib.pyplot as plotlibrary
 import math
@@ -69,3 +69,23 @@ for x in xs:
 
 plotlibrary.plot(xs, ys)
 plotlibrary.show() 
+
+'''
+# 5. Sine 2
+import matplotlib.pyplot as plotlibrary
+import math
+from numpy import arange
+
+def f(x):
+    return math.sin(x)
+
+xs = arange(-5, 6, 0.1)
+ys = []
+
+for x in xs:
+    ys.append(f(x))
+
+plotlibrary.plot(xs,ys)
+plotlibrary.show()
+
+
