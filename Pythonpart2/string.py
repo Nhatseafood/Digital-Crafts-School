@@ -8,7 +8,7 @@ print(name.upper())
 name = "nhat"
 print(name.capitalize())
 
-'''
+
 # 3
 name = "Nhat"
 print(name[::-1])
@@ -34,3 +34,16 @@ for i in paragraph:
     else:
         leet += i
 print(leet)
+
+'''
+#5 
+name = "good"
+p = ''
+for x in range(len(name)):
+    if name[x] == p:
+        name = name [:x] + 3 * name[x] + name[x:]
+        x += 4
+        p = name[x]
+    else:
+        p = name[x]
+print(name)
