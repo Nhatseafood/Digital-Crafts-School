@@ -9,6 +9,12 @@ def hello(x):
 
 hello('Igor')
 
+1.2
+def hello(name):
+     print("Hello" + name)
+
+hello(" Nhat")   
+
 #2. y = x + 1
 import matplotlib.pyplot as plotlibrary
 
@@ -116,7 +122,7 @@ def f():
         return False
 f()
 
-'''
+
 
 # 9
 def f():
@@ -129,4 +135,5 @@ def f():
         print("invalid input. Please try again. ")
         f()   
 f()
-    
+
+
