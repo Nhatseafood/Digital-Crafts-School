@@ -25,9 +25,20 @@ square = int(input("How big is the square? "))
 for number in range(square):
     print('*' * square)
 
-'''
+
 #6
 height = int(input("height size? "))
 weight = int(input("weight size? "))
-for number in range(height, weight):
-    print('*' * height * weight)
+for number in range(1,h+1):
+    if x == 1:
+        print('*' * w)
+    elif x == h:
+        print('*' * W)
+    else:
+        print('*' + ' ' * (w-2) + '*')
+'''
+#7
+print('   *  ')
+print('  *** ')
+print(' ***** ')
+print('******* ')
