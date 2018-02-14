@@ -36,9 +36,17 @@ for number in range(1,h+1):
         print('*' * W)
     else:
         print('*' + ' ' * (w-2) + '*')
-'''
+
 #7
 print('   *  ')
 print('  *** ')
 print(' ***** ')
 print('******* ')
+
+'''
+#8
+h = 4
+for x in range(1,5):
+    print(' ' * (h-x) + '*' * x + '*' * (x-1) + ' ' * (h-x))
+
+
