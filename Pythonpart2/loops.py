@@ -19,8 +19,15 @@ for number in range(1,11):
 size = 5
 for i in range(size):
     print('*' * size)
-'''
+
 #5
 square = int(input("How big is the square? "))
 for number in range(square):
     print('*' * square)
+
+'''
+#6
+height = int(input("height size? "))
+weight = int(input("weight size? "))
+for number in range(height, weight):
+    print('*' * height * weight)
