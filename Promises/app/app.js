@@ -62,47 +62,56 @@ var websites5 = rp('https://en.wikipedia.org/wiki/Google_Chrome')
 // };
 // saveWebSite('https://en.wikipedia.org/wiki/Google_Chrome', "Google");
 
-function cat2Files (filename1,filename2, output) {
+// function cat2Files (filename1,filename2, output) {
     
 
-    fs.readFile("views/" + filename1,  (err, data) => {
-        if (err) throw err;
-        console.log('The file has been read!');
-        fs.appendFile(output, data, (err) => {
-            if (err) throw err;
-            console.log('The file has been saved!' + data);
-        })
-    });
+//     fs.readFile("views/" + filename1,  (err, data) => {
+//         if (err) throw err;
+//         console.log('The file has been read!');
+//         fs.appendFile(output, data, (err) => {
+//             if (err) throw err;
+//             console.log('The file has been saved!' + data);
+//         })
+//     });
 
-    fs.readFile("views/" + filename2, (err, data) => {
-        if (err) throw err;
-        console.log('The 2nd file has been read!');
-        fs.appendFile(output, data, (err) => {
-            if (err) throw err;
-            console.log('The 2nd file has been saved!' + data);
-        })
-    });
+//     fs.readFile("views/" + filename2, (err, data) => {
+//         if (err) throw err;
+//         console.log('The 2nd file has been read!');
+//         fs.appendFile(output, data, (err) => {
+//             if (err) throw err;
+//             console.log('The 2nd file has been saved!' + data);
+//         })
+//     });
  
-};   
-cat2Files('testSite1', 'testSite2', 'yahooandgoogle');
+// };   
+// cat2Files('testSite1', 'testSite2', 'yahooandgoogle');
 
 
-    // .then(function(file1data) {
-    //     console.log("filename 1 found!")
-    //     fs.readFile(filename2, (err) => {
-    //         if (err) throw err;
-    //         // console.log('The file has been read!');
-    //     }).then(function(file2data){
-    //         fs.writeFile(output, htmlString, (err) => {
-    //             if (err) throw err;
-    //             console.log('The file has been saved!');
-    //         })
-    //     })   
-        
-    // })
-    // .catch(function (err) {
-    //     console.log(err)
+function addNumbers(x,y) {
+    var answer = x + y;
+    // var p =
+    return new Promise(function (resolve, reject){
+        if(Number.isInteger(answer)){
+        resolve(answer);
+        }else{
+            reject('error');
+        }
+    });
+    //     p.then(function (answer) { 
+    //     console.log('Done:' ,answer);
     // });
+    //     p.catch(function (error) {
+    //     reject(':('); 
+    //     console.log(error);
+    // });
+}
+
+    
+  addNumbers(2,5)
+    .then(ans => console.log(ans))
+    .catch(err => console.log(err))
+  addNumbers('the','dog').then(ans => console.log(ans)).catch(err => console.log(err))
+   
     
 
 

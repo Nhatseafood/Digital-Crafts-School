@@ -2,11 +2,11 @@
 #sum
 number = [2, 4, 6]
 print(sum(number))
-
+'''
 #largestnum
 number = [1, 2, 3, 100]
 print(max(number))
-
+'''
 #smallestnum
 number = [4, 5, 6, 7]
 print(min(number))
@@ -63,10 +63,4 @@ for i in a:
         z = a[y][k] + b[y][k]
         c[y].extend([z])
 print(c)
-'''    
-day = int(input("Pick a day number (0-6)? "))
-week = ["Sun", "M", "T", "W", "Th", "F", "Sat"]
-if week[day] == "Sun" or week[day] == "Sat":
-    print("Sleep in")
-else:
-    print("Go to work")
+'''

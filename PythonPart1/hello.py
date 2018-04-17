@@ -118,8 +118,17 @@ while True:
     else:
         coin += 1
 
-print("Please fill in the blanks below:")
-name = input("what is name? ")
-subject = input("What is subject? ")
-print(name + "'s " + "favorite subject in school is " + subject + ".")
+
 '''
+bill = int(input("What is the bill amount? "))
+service = input("How was the service? Good, fair, bad. ")
+tip = int
+
+if service == "good":
+    tip = bill * .2
+if service == "fair":
+    tip = bill * .15
+if service == "bad":
+    tip = bill  * .1
+total = str(bill + tip) 
+print("Total amount:" + total)

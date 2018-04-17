@@ -43,10 +43,16 @@ print('  *** ')
 print(' ***** ')
 print('******* ')
 
-'''
+
 #8
 h = 4
 for x in range(1,5):
     print(' ' * (h-x) + '*' * x + '*' * (x-1) + ' ' * (h-x))
-
+'''
+#9
+x = range(1,11)
+for y in x:
+    for z in x:
+    mu = y * z
+    print(y,'',)
 

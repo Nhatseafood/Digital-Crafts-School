@@ -15,7 +15,7 @@ del phonebook_dict['Alice']
 phonebook_dict['Bob'] = '938-3452-2345'
 print(phonebook_dict)
 
-'''
+
 #2
 
 ramit = {
@@ -40,3 +40,24 @@ print(ramit['email'])
 print(ramit['interests'][0])
 print(ramit['friends'][0]['email'])
 print(ramit['friends'][1]['interests'][1])
+'''
+
+#3
+word = 'bananas'
+counts = {}
+for char in word:
+    if char not in counts:
+        counts[char] = 1
+    else:
+        counts[char] += 1
+
+print(counts)
+
+word = 'bananas'
+
+counts = {}
+
+for char in word:
+    current_count = counts.get(char, 0)
+    counts[char] = current_count + 1
+print(counts)
